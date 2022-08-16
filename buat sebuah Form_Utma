@@ -1,0 +1,21 @@
+Public Class Formmenuutama
+    Sub terkunci()
+        LoginToolStripMenuItem.Visible = True
+        LogoutToolStripMenuItem.Visible = False
+        MasterToolStripMenuItem.Visible = False
+        TransaksiToolStripMenuItem.Visible = False
+        LaporanToolStripMenuItem.Visible = False
+        UtilityToolStripMenuItem.Visible = False
+    End Sub
+    Private Sub Formmenuutama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call terkunci()
+    End Sub
+
+    Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
+        Formlogin.ShowDialog()
+    End Sub
+End Class
