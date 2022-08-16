@@ -1,0 +1,4 @@
+Menu utama tambahkan Menu_strip 1.(File = Login,Logout,keuar) 2.Master 3. Transaksi 4. Laporan 5. Utility
+kemudian buat form baru formLogin
+From Login tambhkan 1 .Label= 2 2. Texboxt = 2 Button = 2 (Login dan cancel)
+kmudian tambahkan checkbox untuk hide password
