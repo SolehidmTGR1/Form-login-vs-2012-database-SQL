@@ -2,8 +2,8 @@ Imports System.Data.Odbc
 Public Class Form_tabeluser
     Sub kondisiawal()
         TextBox1.Text = " "
-        TextBox1.Text = " "
-        TextBox1.Text = " "
+        TextBox2.Text = " "
+        TextBox3.Text = " "
         ComboBox1.Items.Clear()
         ComboBox1.Text = " "
         TextBox1.Clear()
@@ -32,8 +32,8 @@ Public Class Form_tabeluser
         TextBox2.Enabled = True
         TextBox3.Enabled = True
         ComboBox1.Enabled = True
-        ComboBox1.Items.Add("User")
-        ComboBox1.Items.Add("Admin")
+        ComboBox1.Items.Add("USER")
+        ComboBox1.Items.Add("ADMIN")
     End Sub
     Private Sub Form_tabeluser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call kondisiawal()   
