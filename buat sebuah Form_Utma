@@ -6,9 +6,15 @@ Public Class Formmenuutama
         TransaksiToolStripMenuItem.Visible = False
         LaporanToolStripMenuItem.Visible = False
         UtilityToolStripMenuItem.Visible = False
+        STlabel2.Text = ""
+        STlabel4.Text = ""
+        STlabel6.Text = ""
+
+
     End Sub
     Private Sub Formmenuutama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call terkunci()
+        STlabel10.Text = Today
     End Sub
 
     Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
@@ -18,4 +24,30 @@ Public Class Formmenuutama
     Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
         Formlogin.ShowDialog()
     End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        Call terkunci()
+    End Sub
+
+    Private Sub TbluserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TbluserToolStripMenuItem.Click
+        Form_tabeluser.ShowDialog()
+
+    End Sub
+
+    Private Sub TblpelangganToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TblpelangganToolStripMenuItem.Click
+        form_pelangggan.ShowDialog()
+    End Sub
+
+    Private Sub TblbarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TblbarangToolStripMenuItem.Click
+        Form_barang.ShowDialog()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        STlabel8.Text = TimeOfDay
+    End Sub
+
+    Shared Function Tbl_userToolStripMenuItem() As Object
+        Throw New NotImplementedException
+    End Function
+
 End Class
